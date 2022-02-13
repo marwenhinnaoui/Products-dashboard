@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+  margin: 0 !important;
+  padding: 0 !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container{
+  height: 100% !important;
 }
+.Sidebar{
+  height: 100vh;
+  background-color: #2b3238 !important;
+  position: fixed;
+}
+.Sidebar ul li{
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px !important;
+}
+.Sidebar ul li:hover{
+    background-color: #212529;
+}
+.Content{
+  height: auto;
+  padding: 30px 30px 30px 40px !important;
+}
+  .Product{
+    overflow: hidden;
+    border-radius: 10px;
+    height:320px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.Add, .Edit{
+  height: 100vh !important;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.Image {
+    width: 100%;
+
+}
+.Image img {
+    width: 100%;
+}
+Form{
+  padding: 15px !important;
+  
+  width: 100%;
+
+}
+Input {
+  padding: 7px !important;
+}
+Button:not(.DeleteButton, .EditButton){
+  padding: 5px 10px !important;
+  background-color: #212529 !important;
+}
+.Image{
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.DeleteButton{
+  padding: 5px !important;
+  position: absolute;
+  right:5px;
+  top:50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.EditButton{
+  padding: 5px !important;
+  position: absolute;
+  width: 40px;
+  right:5px;
+  top:5px;
+  height: 40px;
+  border-radius: 50% !important;
 }
